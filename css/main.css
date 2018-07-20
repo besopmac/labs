@@ -30,3 +30,46 @@ body {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
+
+.title {
+    margin-bottom: 10px;
+    animation: simpleAnimation .5s forwards .3s ease;
+}
+
+
+/*
+ * introduction to animations with keyframes in css
+ *
+ */
+
+.badge {
+    color: #fff;
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10rem;
+    vertical-align: baseline;
+    background-color: #007bff;
+    /* animation: simpleAnimation .5s forwards .3s ease; */
+}
+
+@keyframes simpleAnimation {
+    0% {
+        transform: rotate(0) translate(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(0) translate(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) translate(0);
+        opacity: 1;
+    }
+}
